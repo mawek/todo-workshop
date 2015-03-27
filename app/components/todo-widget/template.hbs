@@ -1,9 +1,31 @@
-<ul>
-  {{#each todos as |todo|}}
-      <li>{{todo.title}}</li>
-  {{/each}}
-</ul>        {{input type="text"
+<section class='todo-widget'>
+
+    <header>
+        <h1>todo-widget</h1>
+        {{input type="text"
                 value=newTodoTitle
                 action="addNewTodo"
                 placeholder='Add title for new todo'
                 on="enter"}}
+    </header>
+
+    <section class="todo-list">
+      <ul>
+        {{#each todos as |todo|}}
+            <li>{{todo.title}}</li>
+        {{/each}}
+      </ul>
+    </section>
+
+    <footer>
+        <span>item count</span>
+        <span class="filter">
+            <button>show not completed</button>
+            <button>show completed</button>
+            <button>show all</button>
+        </span>
+
+        <button>clear completed</button>
+    </footer>
+
+</section>
