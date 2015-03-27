@@ -8,7 +8,7 @@ export default Ember.Component.extend({
     addNewTodo: function () {
       var newTodoTitle = this.get('newTodoTitle');
 
-      this.get('todos').pushObject(
+      this.get('todos').insertAt(0,
         Ember.Object.create({
           title: newTodoTitle,
           isCompleted: false
