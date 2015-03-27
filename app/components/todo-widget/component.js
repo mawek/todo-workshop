@@ -16,6 +16,10 @@ export default Ember.Component.extend({
       );
 
       this.set('newTodoTitle', '');
+    },
+
+    removeTodo(todo) {
+      this.get('todos').removeObject(todo);
     }
   }
 });
