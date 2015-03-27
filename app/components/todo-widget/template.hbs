@@ -2,4 +2,8 @@
   {{#each todos as |todo|}}
       <li>{{todo.title}}</li>
   {{/each}}
-</ul>
+</ul>        {{input type="text"
+                value=newTodoTitle
+                action="addNewTodo"
+                placeholder='Add title for new todo'
+                on="enter"}}
