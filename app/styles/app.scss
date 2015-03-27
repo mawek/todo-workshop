@@ -1,3 +1,29 @@
 @import "settings";
-
 @import "foundation";
+
+.todo-widget {
+  width: 500px;
+  margin: 0 auto;
+
+  .new-todo {
+    margin: 0;
+  }
+
+  .todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 50px;
+  }
+
+  .todo-list-item {
+    border-bottom: 1px solid rgb(226, 226, 226);
+
+    &:hover{
+      background-color: rgb(250, 250, 250);
+      //transition: background-color 0.3s;
+    }
+  }
+
+}
+

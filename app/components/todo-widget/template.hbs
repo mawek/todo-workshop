@@ -3,16 +3,17 @@
     <header>
         <h1>todo-widget</h1>
         {{input type="text"
+                class='new-todo'
                 value=newTodoTitle
                 action="addNewTodo"
                 placeholder='Add title for new todo'
                 on="enter"}}
     </header>
 
-    <section class="todo-list">
-      <ul>
+    <section>
+      <ul class="todo-list">
         {{#each todos as |todo|}}
-            <li>{{todo.title}}</li>
+            <li class="todo-list-item">{{todo.title}}</li>
         {{/each}}
       </ul>
     </section>
@@ -20,12 +21,12 @@
     <footer>
         <span>item count</span>
         <span class="filter">
-            <button>show not completed</button>
-            <button>show completed</button>
-            <button>show all</button>
+            <a class="button radius tiny">show not completed</a>
+            <a class="button radius tiny">show completed</a>
+            <a class="button radius tiny">show all</a>
         </span>
 
-        <button>clear completed</button>
+        <a class="button info secondary radius tiny">clear completed</a>
     </footer>
 
 </section>
