@@ -1,6 +1,10 @@
 @import "settings";
 @import "foundation";
 
+label {
+  display: inline-block;
+}
+
 .todo-widget {
   width: 500px;
   margin: 0 auto;
@@ -18,17 +22,28 @@
 
   .todo-list-item {
     border-bottom: 1px solid rgb(226, 226, 226);
+    padding: 0 5px;
 
     &:hover {
       background-color: rgb(250, 250, 250);
       //transition: background-color 0.3s;
     }
 
-    .remove-todo {
+    .remove-todo-list-item {
       float: right;
       margin-right: 20px;
     }
-  }
 
+    .todo-list-item-title {
+      margin-left: 10px;
+    }
+
+    &.completed {
+      .todo-list-item-title {
+        text-decoration: line-through;
+        color: #c4cdc6;
+      }
+    }
+  }
 }
 

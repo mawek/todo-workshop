@@ -1,1 +1,5 @@
-{{todo.title}} <a {{action "removeTodo" todo}} class="remove-todo">x</a>
+<label>
+  {{input type='checkbox' checked=todo.isCompleted}}
+  <span class="todo-list-item-title">{{todo.title}}</span>
+</label>
+<a {{action "removeTodo" todo}} class="remove-todo-list-item">x</a>
