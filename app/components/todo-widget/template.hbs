@@ -1,7 +1,7 @@
 <section class='todo-widget'>
 
     <header>
-        <h1>todo-widget</h1>
+        <h1 class="subheader">todo-widget</h1>
         {{input type="text"
                 class='new-todo'
                 value=newTodoTitle
@@ -15,14 +15,18 @@
     </section>
 
     <footer>
-        <span>item count</span>
+        <label class="items-count">item count</label>
+
+        <span class="actions">
+            <a class="button info secondary radius tiny">clear completed</a>
+        </span>
+
         <span class="filter">
             <a class="button radius tiny">show not completed</a>
             <a class="button radius tiny">show completed</a>
             <a class="button radius tiny">show all</a>
         </span>
 
-        <a class="button info secondary radius tiny">clear completed</a>
     </footer>
 
 </section>

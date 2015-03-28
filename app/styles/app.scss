@@ -5,6 +5,10 @@ label {
   display: inline-block;
 }
 
+.button {
+  margin-bottom: 0;
+}
+
 .todo-widget {
   width: 550px;
   margin: 50px auto;
@@ -48,6 +52,28 @@ label {
         color: #c4cdc6;
       }
     }
+  }
+
+  header {
+    text-align: center;
+  }
+
+  footer {
+    margin: 10px 0 0;
+  }
+
+  .filter {
+    float: right;
+    margin-right: 30px;
+  }
+
+  .items-count {
+
+  }
+
+  .actions {
+    float: right;
+    margin-right: 5px;
   }
 }
 
