@@ -6,6 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('todos', function() {
+    this.route('completed');
+    this.route('all');
+    this.route('notCompleted');
+  });
 });
 
 export default Router;

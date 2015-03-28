@@ -22,9 +22,9 @@
         </span>
 
         <span class="filter">
-            <a class="button radius tiny">show not completed</a>
-            <a class="button radius tiny">show completed</a>
-            <a class="button radius tiny">show all</a>
+          {{link-to 'show all' 'todos.all' class="button radius tiny"}}
+          {{link-to 'show completed' 'todos.completed' class="button radius tiny"}}
+          {{link-to 'show not completed' 'todos.notCompleted' class="button radius tiny"}}
         </span>
 
     </footer>
