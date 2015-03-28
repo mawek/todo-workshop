@@ -8,6 +8,11 @@ export default Ember.Component.extend({
     addNewTodo: function () {
       var newTodoTitle = this.get('newTodoTitle');
 
+      if (Ember.isEmpty(newTodoTitle) || Ember.isEmpty(newTodoTitle.trim())) {
+        this.set('newTodoTitle', '');
+        return;
+      }
+
       this.get('todos').insertAt(0,
         Ember.Object.create({
           title: newTodoTitle,
