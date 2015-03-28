@@ -15,7 +15,7 @@
     </section>
 
     <footer>
-        <label class="items-count">item count</label>
+        <label class="items-count">{{todo-pluralize count=todos.length label='item' suffix='s'}}</label>
 
         <span class="actions">
             <a class="button info secondary radius tiny">clear completed</a>
