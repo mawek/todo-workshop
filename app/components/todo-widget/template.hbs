@@ -11,11 +11,7 @@
     </header>
 
     <section>
-      <ul class="todo-list">
-        {{#each todos as |todo|}}
-            <li class="todo-list-item">{{todo.title}} <a {{action "removeTodo" todo}} class="remove-todo">x</a></li>
-        {{/each}}
-      </ul>
+      {{todo-list todos=todos removeTodo='removeTodo'}}
     </section>
 
     <footer>
